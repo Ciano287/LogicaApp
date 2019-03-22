@@ -28,13 +28,12 @@ public class MainActivity extends AppCompatActivity {
         falseFalseInput = findViewById(R.id.falseFalseInput);
         submitButton = findViewById(R.id.submitButton);
 
+
         submitButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 checkAnswer();
-
-                // Get the Data and Use it
 
             }
         });
@@ -43,19 +42,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkAnswer(){
-        boolean b = false;
         if ((trueTrueInput.getText().toString().equals("T") ||trueTrueInput.getText().toString().equals("t"))
                 && (trueFalseInput.getText().toString().equals("F") ||trueFalseInput.getText().toString().equals("f"))
                 && (falseTrueInput.getText().toString().equals("F") ||falseTrueInput.getText().toString().equals("f"))
                 && (falseFalseInput.getText().toString().equals("F") || falseFalseInput.getText().toString().equals("f")))
         {
-            b = true;
+            Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, getString(R.string.wrong), Toast.LENGTH_SHORT).show();
+
         }
 
-        if (b) {
-            Toast.makeText(this, "Correct!!", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "Wrong.", Toast.LENGTH_SHORT).show();
-        }
     }
 }

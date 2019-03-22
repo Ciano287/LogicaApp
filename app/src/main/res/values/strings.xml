@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Logica App</string>
+    <string name="correct">Correct!!</string>
+    <string name="wrong">Wrong.</string>
+    <string name="conjunction">Conjunction (AND)</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="ab">A^B</string>
+    <string name="t">T</string>
+    <string name="f">F</string>
+    <string name="submit">SUBMIT</string>
+    <string name="tt">T*T</string>
+    <string name="tf">T*F</string>
+    <string name="ft">F*T</string>
+    <string name="ff">F*F</string>
+
 </resources>
