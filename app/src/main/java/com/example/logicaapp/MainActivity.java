@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkAnswer(){
-        if ((trueTrueInput.getText().toString().equals("T") ||trueTrueInput.getText().toString().equals("t"))
-                && (trueFalseInput.getText().toString().equals("F") ||trueFalseInput.getText().toString().equals("f"))
-                && (falseTrueInput.getText().toString().equals("F") ||falseTrueInput.getText().toString().equals("f"))
-                && (falseFalseInput.getText().toString().equals("F") || falseFalseInput.getText().toString().equals("f")))
+        if ((trueTrueInput.getText().toString().equals(R.string.T) ||trueTrueInput.getText().toString().equals(R.string.t))
+                && (trueFalseInput.getText().toString().equals(R.string.F) ||trueFalseInput.getText().toString().equals(R.string.f))
+                && (falseTrueInput.getText().toString().equals(R.string.F) ||falseTrueInput.getText().toString().equals(R.string.f))
+                && (falseFalseInput.getText().toString().equals(R.string.F) || falseFalseInput.getText().toString().equals(R.string.f)))
         {
             Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_SHORT).show();
         } else {
